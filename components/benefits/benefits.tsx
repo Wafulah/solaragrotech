@@ -2,7 +2,7 @@ import { LuCheckCircle, LuCheckSquare } from "react-icons/lu";
 
 const Benefits = () => {
   return (
-    <div className="lg:h-[160vh] h-[210vh] w-screen mb-5 lg:mb-40">
+    <div className="lg:h-[160vh] h-[225vh] w-screen mb-5 lg:mb-40">
       <div className="glassmorphism h-1/4 w-11/12 mx-auto">
         <div className="w-full h-1/5 flex items-center mt-4">
           <LuCheckSquare
