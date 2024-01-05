@@ -49,7 +49,7 @@ const Footer = () => {
               style={{ color: "rgb(3, 178, 82)" }}
               className="text-white text-3xl"
             />
-            <p className="text-white pr-2">solaragrotech@gmail.com</p>
+            <p className="text-white pr-2">solaragrotech0@gmail.com</p>
           </div>
         </div>
       </div>
