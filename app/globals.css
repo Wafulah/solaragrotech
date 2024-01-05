@@ -2,26 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.transparentColor {
+  background-color: #02062461;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.head-text {
+  @apply xl:text-[7rem] text-[4.2rem] xl:leading-[8rem] leading-[5.5rem] font-black;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
+.mb-head-text {
+  @apply xl:text-[8rem] text-[4rem] xl:leading-[8rem] leading-[5rem] font-black;
+}
+
+.sub-head-text {
+  @apply xl:text-[4rem] text-[3rem] xl:leading-[4rem] leading-[2rem] font-black;
+}
+
+.interior {
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    to right,
+    rgb(3, 178, 82) 10%,
+    rgb(252, 249, 249) 50%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.exterior {
+  background: linear-gradient(
+    to right,
+
+    rgb(252, 249, 249) 10%,
+    rgb(3, 178, 82) 50%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.glassmorphism {
+  background: rgba(3, 178, 82, 0.081);
+  box-shadow: 0 2px 30px 0 rgba(31, 38, 135, 0.07);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
 }
